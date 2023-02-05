@@ -12,11 +12,12 @@ body{
 .header{
     background: black;
     display: flex;
-    height: 80px;
+    height: 120px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     padding-left: 40px;
+    padding-right: 40px;
 }
 
 .headerTitle{
@@ -44,4 +45,94 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+.collections{
+    width: 100%;
+    padding: 40px;
+}
+
+.collectionsTitle, .infoTitle{
+    font-size: 350%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.collectionsList{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.collectionsListItem{
+    width: 500px;
+    height: 700px;
+    flex-shrink: 1;
+    flex-grow: 1; 
+}
+
+.collectionsListItem > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info{
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.info p{
+    
+}
+
+.footer{
+    height:  120px;
+    background: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footerNavigation{
+    list-style: none;
+}
+
+.footerNavigationItem{
+    font-size: 80%;
+    font-style: italic ;
+}
+.footerNavigationItem > a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer > address{
+    font-size: 80%;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 14px;
+    }
+    .headerTitle{
+        font-size: 380%;
+    }
 }
